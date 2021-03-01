@@ -44,7 +44,7 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage \
+    $(LOCAL_PATH)/overlay-ssos \
     $(LOCAL_PATH)/overlay-system
 
 # AID/fs configs
@@ -114,6 +114,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
+# Board
+PRODUCT_USES_QCOM_HARDWARE := true
+PRODUCT_BOARD_PLATFORM := msmnile
+
 # Camera
 PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0.vendor \
@@ -136,8 +140,8 @@ TARGET_BOARD_PLATFORM := msmnile
 
 -include hardware/qcom-caf/sm8150/display/config/display-board.mk
 -include hardware/qcom-caf/sm8150/display/config/display-product.mk
-include hardware/qcom-caf/sm8150/display/display-commonsys-intf/config/display-interfaces-product.mk
-include hardware/qcom-caf/sm8150/display/display-commonsys-intf/config/display-product-system.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-interfaces-product.mk
+include vendor/qcom/opensource/commonsys-intf/display/config/display-product-system.mk
 
 PRODUCT_PACKAGES += \
     libtinyxml
