@@ -1042,6 +1042,12 @@ vendor/lib64/libsdm-diag.so|2d3c04133ac1a8e030c088fd4a34a52d2eb91173
 vendor/lib64/libsdmextension.so|843087d301215c91782a7b8de4c4d6a9ce9c7987
 vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
 
+# HotwordEnrollment - from hentai_raphael-Rika-ota-rq2a.210405.005-Furry.04070341
+-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|ac7411971458b7e8c7e45cbdd2189164726924de
+-product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|4de07927eb20e6869d9bddc72a558e1ca3ad785f
+system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
+-system_ext/framework/com.android.hotwordenrollment.common.util.jar|bef92589e75a6da6043f85f4b9b0e85866429624
+
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
